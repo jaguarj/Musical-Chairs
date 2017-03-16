@@ -1,7 +1,17 @@
 <ol>
-	<li>Title: {{title}} </li>
-	<li>Veggie: {{veggie}} </li>
-	<li>Image: {{imgUrl}} </li>
+	{{#each recipes}}
+		<li>
+		<p>Title: {{title}}</p>
+		<p>Veggie: {{veggie}}</p>
+		<p>Image: {{imgUrl}}</p>
+		</li>
+		<br>
+	{{/each}}
 </ol>
 
 
+<!-- {{#each todos}}
+    <li>Description: {{description}}</li>
+    <li>Urgent: {{urgent}}</li>
+    <br>
+{{/each}} -->
