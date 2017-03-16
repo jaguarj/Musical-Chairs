@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Recipes Lab</title>
+<!--     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="#">
+    <meta name="description" content=" What kind of content are you talking about?">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ --><!--     <link rel="stylesheet" type="text/css" href=" PLACE NORMALIZE CSS FIRST BEFORE YOURS TO RESET CSS .css">
+    <link rel="stylesheet" type="text/css" href=" YOUR CSS EXTERNAL FILE PATH .css">
+ -->
+    <!-- <script src="   YOUR EXTERNAL JS FILE GOES HERE!!  .js"></script> -->
+
+
+<!-- HERE IS THE LINK FOR CREATING YOUR OWN CODE SNIPPETS WITHIN ST3.
+
+https://www.youtube.com/watch?v=umzP60oyfZk
+
+-->
+
+<style>
+
+/* STYLESHEET FOR HOLY GRAIL */
+
+    body {
+        padding: 2em;
+        background-color: #6D899F;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    p {
+      text-align: left;
+    }
+    header, footer {
+        background-color: #ffa;
+        padding: 5px;
+    }
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    article {
+        order: 2;
+        flex: 3;
+        background-color: #BCD39B;
+    }
+    nav {
+        order: 1;
+        flex: 1;
+        background-color: #CE9B64;
+    }
+    aside {
+        order: 3;
+        flex: 1;
+        background-color: #62626D;
+    }
+    article, nav, aside {
+        padding: 1em;
+    }
+
+    /* mobile layout */
+    /* @media (max-width: 480px) { */
+    @media only screen and (max-width: 520px) {
+        section {
+            display: flex;
+            width: 100%;
+        flex-direction: column;
+        }
+        article { order: 2; }
+        nav     { order: 1; }
+      aside   { order: 3; }
+    }
+
+/* MAKE SEPERATE EXTERNAL STYLESHEET AND LINK IT ABOVE */
+
+</style>
+
+</head>
+    <body>
+
+
+<!-- NON-HOLY GRAIL BUT STILL HELPFULL.
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" target="_blank">About</a></li>
+                    <li><a href="#" target="_blank">Stuff</a></li>
+                    <li><a href="#" target="_blank">More stuff</a></li>
+                    <li><a href="#" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+-->
+
+
+<!-- HOLY GRAIL BOILERPLATE AND LINK WITH FLEXBOX: Credit: http://codepen.io/drmikeh/pen/NAyVpg?editors=1100 -->
+
+<header><h2>Header</h2></header>
+<section>
+  <article>
+    <h1>Article contents</h1>
+    <div class="contents">
+
+    		{{{ body }}}
+
+
+    </div>
+  </article>
+  <nav><h2>Navbar contents</h2></nav>
+  <aside><h2>Sidebar contents</h2></aside>
+</section>
+<footer><h2>Footer</h2></footer>
+
+
+
+
+
+    <script>
+<!--
+   // ADD YOUR .JS SCRIPT HERE BUT ADD YOUR JS FILES UP TOP IN THE HEAD SEC.
+
+   // EXAMPLE document.getElementById("demo").innerHTML = "Hello JavaScript!";
+
+//-->
+
+    </script>
+    </body>
+</html>
+
